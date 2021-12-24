@@ -136,5 +136,5 @@ function resetTimer() {
     hourElement.innerHTML = 0;
     minuteElement.innerHTML = 0;
     secondElement.innerHTML = 0;
-    button.innerHTML = 'start'
+    button.innerHTML = 'start';
 }
