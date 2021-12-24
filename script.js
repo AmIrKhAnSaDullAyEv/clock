@@ -99,10 +99,7 @@ button.addEventListener('click', () => {
         clearInterval(interval);
         button.innerHTML = 'reset';
     }else if(button.innerHTML == 'reset') {
-        hourElement.innerHTML = 0;
-        minuteElement.innerHTML = 0;
-        secondElement.innerHTML = 0;
-        button.innerHTML = 'start'
+        resetTimer()
     }
 })
 
@@ -130,4 +127,11 @@ function startTimer() {
         hour2 = 0;
         hourElement.innerHTML = hour2;
     }
+}
+
+function resetTimer() {
+    hourElement.innerHTML = 0;
+    minuteElement.innerHTML = 0;
+    secondElement.innerHTML = 0;
+    button.innerHTML = 'start'
 }
