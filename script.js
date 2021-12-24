@@ -130,6 +130,9 @@ function startTimer() {
 }
 
 function resetTimer() {
+    hour2 = 0;
+    minute = 0;
+    secound = 0;
     hourElement.innerHTML = 0;
     minuteElement.innerHTML = 0;
     secondElement.innerHTML = 0;
